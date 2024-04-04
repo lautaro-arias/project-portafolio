@@ -15,8 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className=" bg-black ">
       <body className={inter.className}>{children}</body>
     </html>
   );
 }
+// bg-[url('/assets/bgTrailer2.jpg')] bg-center  bg-cover  bg-no-repeat
