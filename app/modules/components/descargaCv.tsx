@@ -1,15 +1,17 @@
 'use client'
+//npm install react-intersection-observer
 import React from 'react'
 import SobreMi from './sobreMi'
-import AOS from 'aos'
-
+import 'animate.css';
+import ParticlesComponent from '../handlers/particles';
 
 const DescargaCv = () => {
-    AOS.init()
   
   return (
     <>
-      <section className="text-white body-font py-56  "data-aos="zoom-in">
+      <ParticlesComponent id="particles"/>
+
+      <section className="text-white body-font py-56 animate__animated animate__fadeIn animate__delay-900ms animate__slower "data-aos="zoom-in">
               <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
                     <div className="text-center lg:w-2/3 w-full">
                           <h1 className="title-font flex mx-auto justify-center font-extrabold  text-sm mb-4 text-white">
@@ -34,6 +36,7 @@ const DescargaCv = () => {
                     </div>
               </div>
         </section>
+        
     <SobreMi/>
    </>
   )
