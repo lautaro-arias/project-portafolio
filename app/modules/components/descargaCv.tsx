@@ -1,17 +1,12 @@
-'use client'
-//npm install react-intersection-observer
 import React from 'react'
 import SobreMi from './sobreMi'
-import 'animate.css';
-import ParticlesComponent from '../handlers/particles';
+
 
 const DescargaCv = () => {
   
   return (
     <>
-      <ParticlesComponent id="particles"/>
-
-      <section className="text-white body-font py-56 animate__animated animate__fadeIn animate__delay-900ms animate__slower "data-aos="zoom-in">
+      <section className="text-white body-font py-56">
               <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
                     <div className="text-center lg:w-2/3 w-full">
                           <h1 className="title-font flex mx-auto justify-center font-extrabold  text-sm mb-4 text-white">
@@ -20,7 +15,7 @@ const DescargaCv = () => {
                               , soy 
                               </h1>
                           <h1 className="bg-gradient-to-r from-green-300 via-cyan-500 to-purple-500 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">Lautaro Arias</h1>
-                          <p className="mb-4 mt-4 leading-relaxed">Desarrollador Front-end,apasionado por el aprendizaje.</p>
+                          <p className="  mb-4 mt-4 leading-relaxed">Desarrollador Front-end,apasionado por el aprendizaje.</p>
                             <div className=" flex flex-wrap justify-center text-center mx-auto">
                                 <button className=" flex justify-center ml-4  mt-2 text-white h-12 w-60 bg-cyan-600 border-0 py-2 px-6 focus:outline-none hover:bg-cyan-500 rounded text-lg">
                                     Descargar CV  

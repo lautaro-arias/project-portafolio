@@ -35,7 +35,8 @@ const config: Config = {
         "gradient-conic":
         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         'bgHero':"url('/src/modules/assets/hero.jpg')",
-        'bgTrailer':"url('/src/modules/assets/bgTraile.jpg')",
+        'bgTrailer':"url('/src/modules/assets/bgTrailer.jpg')",
+        'bgProyect1':"url('/src/modules/assets/proyect1.png')",
       },
     },
   },
