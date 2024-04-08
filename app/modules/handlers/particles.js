@@ -6,7 +6,6 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 const ParticlesComponent = (props) => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
-      //await loadBasic(engine);
     })
   const options = useMemo(
     () => ({

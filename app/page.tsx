@@ -10,7 +10,7 @@ export default function Home() {
   setTimeout(() => {
     setTime(true);
   }, 2000);
-
+//<ParticlesComponent id="particles" />
   return (
     <>
       <ParticlesComponent id="particles" />
