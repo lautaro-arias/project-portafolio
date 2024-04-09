@@ -1,4 +1,4 @@
-'use client'
+/*'use client'
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useMemo } from "react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
@@ -58,4 +58,4 @@ const ParticlesComponent = (props) => {
   return <Particles id={props.id}   options={options} />; 
 };
 
-export default ParticlesComponent;
+export default ParticlesComponent;*/

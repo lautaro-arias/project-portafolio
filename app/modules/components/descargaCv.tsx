@@ -36,7 +36,6 @@ const DescargaCv = () => {
                     </div>
               </div>
         </section>
-        
     <SobreMi/>
    </>
   )
