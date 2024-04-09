@@ -22,15 +22,15 @@ const DescargaCv = () => {
                                   <svg height="27" width="27" xmlns="http://www.w3.org/2000/svg" className='ms-4 hover:shadow-xl hover:shadow-red-600 cursor-pointer rounded-md bg-transparent p-0' viewBox="0 49.4 512 399.4200000000001"><g fill="none" ><g ><path d="M34.91 448.818h81.454V251L0 163.727V413.91c0 19.287 15.622 34.91 34.91 34.91z" fill="#4285f4"/><path d="M395.636 448.818h81.455c19.287 0 34.909-15.622 34.909-34.909V163.727L395.636 251z" fill="#34a853"/><path d="M395.636 99.727V251L512 163.727v-46.545c0-43.142-49.25-67.782-83.782-41.891z" fill="#fbbc04"/></g><path d="M116.364 251V99.727L256 204.455 395.636 99.727V251L256 355.727z" fill="#ea4335"/><path d="M0 117.182v46.545L116.364 251V99.727L83.782 75.291C49.25 49.4 0 74.04 0 117.18z" fill="#c5221f" /></g></svg>
                               </div>
                             <div className=" flex flex-wrap justify-center text-center mx-auto mt-6">
-                                <button className=" flex justify-center ml-4  mt-2 text-white h-12 w-60 bg-cyan-600 border-0 py-2 px-6 focus:outline-none hover:bg-cyan-500 rounded text-lg">
+                                <button className="border-black  hover:bg-transparent hover:border hover:border-cyan-300 hover:text-cyan-400  flex justify-center ml-4  mt-2 text-white h-12 w-60 bg-cyan-600 border-0 py-2 px-6 focus:outline-none hover:bg-cyan-500 rounded text-lg">
                                     Descargar CV  
                                     <svg xmlns="http://www.w3.org/2000/svg" className=" ms-2 h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                                     </svg>
                                 </button>
-                              <button className="ml-4 flex justify-center  mt-2 h-12 text-gray-700 w-60 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                              <button className="ml-4 flex justify-center  mt-2 h-12 text-black w-60 bg-gray-100 border py-2 px-6 focus:outline-none  hover:text-white hover:border-cyan-50 hover:bg-transparent rounded text-lg">
                                   Contactame
-                                  <svg viewBox="0 0 48 48"   className=" ms-2 h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#34dfdc"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" ></g><g id="SVGRepo_iconCarrier"> <path d="M44 24V9H24H4V24V39H24" stroke="#41a1b4" strokeWidth="4" ></path> <path d="M44 34L30 34" stroke="#41a1b4" strokeWidth="4" ></path> <path d="M39 29L44 34L39 39" stroke="#41a1b4" strokeWidth="4" ></path> <path d="M4 9L24 24L44 9" stroke="#41a1b4" strokeWidth="4" ></path> </g></svg>
+                                  <svg viewBox="0 0 48 48"   className=" ms-2 h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#69e6ff"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" ></g><g id="SVGRepo_iconCarrier"> <path d="M44 24V9H24H4V24V39H24" stroke="#41a1b4" strokeWidth="4" ></path> <path d="M44 34L30 34" stroke="#41a1b4" strokeWidth="4" ></path> <path d="M39 29L44 34L39 39" stroke="#41a1b4" strokeWidth="4" ></path> <path d="M4 9L24 24L44 9" stroke="#41a1b4" strokeWidth="4" ></path> </g></svg>
                               </button>
                           </div>
                     </div>

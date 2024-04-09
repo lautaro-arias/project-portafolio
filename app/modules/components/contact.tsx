@@ -18,8 +18,8 @@ return (
       <section className="text-gray-400 body-font relative w-screen bg-transparent mt-10  ">
             <div className="container px-5 py-12 pt-60 mx-auto ">
                   <div className="flex flex-col text-center w-full mb-12">
-                        <h1 id="contact" className="sm:text-3xl text-2xl font-medium title-font mb-4 text-cyan-600">Contactame!</h1>
-                        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">si necesitas una persona responsable y capaz de cumplir cada tarea.</p>
+                        <h1 id="contact" className="sm:text-3xl text-5xl font-medium title-font mb-4 text-cyan-600">Contactame!</h1>
+                        <p className="lg:w-2/3 mx-auto leading-relaxed text-white text-lg">si necesitas una persona responsable y capaz de cumplir cada tarea.</p>
                               <div className='hover:backdrop-blur-3xl flex mx-auto mt-2'> 
                                     <a className=" text-white font-extrabold border-b border-cyan-300 "  id="emailLink" href={`mailto:${email}`}>{email}</a>
                                           <button className='tooltip tooltip-right' data-tip="Copiar">
@@ -37,7 +37,7 @@ return (
                                                             <input
                                                                   type="text"
                                                                   id="name"
-                                                                  className="peer backdrop-blur-3xl text-cyan-500  w-full border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
+                                                                  className="peer  focus:bg-black  text-cyan-500  w-full border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                                                   placeholder="Nombre"
                                                                   name="name"
                                                                   value={formData.name}
@@ -59,7 +59,7 @@ return (
                                                                   type="text"
                                                                   id="Apellido"
                                                                   name="lastname"
-                                                                  className="backdrop-blur-3xl peer w-full text-cyan-500  border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
+                                                                  className="rounded-md focus:bg-black  peer w-full text-cyan-500  border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                                                   placeholder="Apellido"
                                                                   onChange={handleInputChange} 
                                                                   value={formData.lastname} 
@@ -79,7 +79,7 @@ return (
                                                                   type="number"
                                                                   id="Telefono"
                                                                   name="phone"
-                                                                  className="backdrop-blur-3xl peer w-full text-cyan-500  border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
+                                                                  className="rounded-md focus:bg-black peer w-full text-cyan-500  border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                                                   placeholder="Telefono"
                                                                   onChange={handleInputChange} 
                                                                   value={formData.phone} 
@@ -99,7 +99,7 @@ return (
                                                             type="email"
                                                             id="Email"
                                                             name="email"
-                                                            className="backdrop-blur-3xl peer w-full text-cyan-500  border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
+                                                            className="focus:bg-black  rounded-md  peer w-full text-cyan-500  border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                                                             placeholder="Email"
                                                             onChange={handleInputChange} 
                                                             value={formData.email} 
@@ -118,7 +118,7 @@ return (
                                                       <label htmlFor="Mensaje"className="relative block rounded-md border border-gray-600 shadow-sm focus-within:border-cyan-600 focus-within:ring-1 ">
                                                             <textarea  
                                                                   name="message"
-                                                                  id="Mensaje" className="bg-black backdrop-blur-3xl w-full border min-h-40 max-h-80 border-black   focus-within:border-black   focus-within:ring-0 text-start  bg-transparent bg-opacity-50  rounded-lg  pb-10 text-base outline-none text-white py-1 px-3 leading-8  "
+                                                                  id="Mensaje" className="focus:bg-black w-full border min-h-40 max-h-80 border-black   focus-within:border-black   focus-within:ring-0 text-start  bg-transparent bg-opacity-50  rounded-lg  pb-10 text-base outline-none text-white py-1 px-3 leading-8  "
                                                                   onChange={handleInputChange} 
                                                                   value={formData.message}
                                                                   minLength={30}
@@ -132,9 +132,8 @@ return (
                                                 </div>
                                           </div>
                                     <div className="p-2 w-full">
-                                          <button type="submit" className=" w-full  text-center  mx-auto bg-cyan-600 hover:bg-cyan-500 text-white py-2 px-8  rounded-lg text-lg">
-                                          <a className='flex  justify-center'>Enviar<svg viewBox="0 0 1024 1024" className="ms-3 h-8 w-8 icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" ></g><g id="SVGRepo_iconCarrier"><path d="M633.319 722.634L429 860.298V672.034z" fill="#307cab"></path><path d="M446.662 681.407l388.442 104.557L960 163.702l-159.706 99.826L64 723.667z" fill="#2bb3ee"></path><path d="M446.662 681.407L960 163.702l-159.706 99.826L64 723.667z" fill="#ffebeb"></path></g></svg>
-                                          </a>
+                                          <button type="submit" className=" w-full  text-center border border-black mx-auto bg-cyan-600 hover:bg-transparent hover:border hover:border-cyan-300 hover:text-cyan-400  text-white py-2 px-8  rounded-lg text-lg">
+                                                <a className='flex  justify-center'>Enviar<svg viewBox="0 0 1024 1024" className="ms-3 h-8 w-8 icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" ></g><g id="SVGRepo_iconCarrier"><path d="M633.319 722.634L429 860.298V672.034z" fill="#307cab"></path><path d="M446.662 681.407l388.442 104.557L960 163.702l-159.706 99.826L64 723.667z" fill="#2bb3ee"></path><path d="M446.662 681.407L960 163.702l-159.706 99.826L64 723.667z" fill="#ffebeb"></path></g></svg></a>
                                           </button>
                                     </div>
                               </form>

@@ -10,7 +10,8 @@ const SobreMi = () => {
     <> 
       <section  className="bg- black text-white body-font py-30 animate__animated animate__fadeIn animate__delay-900ms animate__slower">
           <div className="container px-5 py-24 mx-auto flex flex-col ">
-              <div className="lg:w-4/6 mx-auto ">
+              <div className="lg:w-4/6 mx-auto text-center ">
+                <h1 className="text-3xl  sm:text-5xl-medium title-font pb-10 text-cyan-600 ">Sobre mi</h1>
                   <div className="flex flex-col sm:flex-row mt-10">
                         <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                             <div className="avatar">
