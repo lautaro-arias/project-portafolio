@@ -1,20 +1,21 @@
 import Navbar from "./modules/components/navbar";
-//import ParticlesComponent from "./modules/handlers/particles";
-//import 'animate.css';
-//animate__animated animate__fadeIn animate__delay-900ms animate__slower
 import { motion } from "framer-motion"
-
+import React from "react";
 export default function Home() {
-
 //<ParticlesComponent id="particles" />
+/* <motion.div
+          animate={{ opacity: 1 }}
+          variants={{
+            hidden: { opacity: 0,y:75 }, 
+            visible: { opacity: 1 ,y:0},
+          }}
+        /> */
   return (
     <>
         <div className=""> 
-        <motion.div
-      
-      > 
+         
           <Navbar/>
-        </motion.div> 
+         
 
         </div> 
     </>
