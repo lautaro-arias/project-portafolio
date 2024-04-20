@@ -1,11 +1,12 @@
 import React from 'react'
 import SobreMi from './sobreMi'
-
+import ParticlesComponent from '../handlers/particles'
 
 const DescargaCv = () => {
   
   return (
     <>
+    <ParticlesComponent id="particles"/>
       <section className="text-white body-font py-40">
               <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
                     <div className="text-center lg:w-2/3 w-full">
