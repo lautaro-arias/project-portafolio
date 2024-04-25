@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import Contacto from './contact'
 import ArrayProjects from '../utils/arrayProjects'
 import LenguajesIcons from '../utils/arrayLenguajes'

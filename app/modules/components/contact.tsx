@@ -15,7 +15,7 @@ const Contacto = () => {
       //
 return (
 <>
-      <section className="text-gray-400 body-font relative w-screen bg-transparent mt-10  ">
+      <section id="contact" className="text-gray-400 body-font relative w-screen bg-transparent mt-10  ">
             <div className="container px-5 py-12 pt-60 mx-auto ">
                   <div className="flex flex-col text-center w-full mb-12">
                         <h1 id="contact" className="sm:text-3xl text-5xl font-medium title-font mb-4 text-cyan-600">Contactame!</h1>

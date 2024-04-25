@@ -4,7 +4,7 @@ import Proyects from './proyects'
 import Contacto from './contact'
 
 const Lenguajes = () => {
-  const { svgs } = LenguajesIcons()    //     ajustar iconos   /// 
+  const { svgs } = LenguajesIcons()    //     ajustar iconos   /// revisar descargas , por que no se descarga el pdf 
   return (
 <>
     <section className="body-font  ">
