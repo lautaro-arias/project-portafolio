@@ -7,7 +7,6 @@ const Lenguajes = () => {
   const { svgs } = LenguajesIcons()   
   
   
-  //     ajustar iconos   ///
   // revisar descargas , por que no se descarga el pdf 
 
 
