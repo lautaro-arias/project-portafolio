@@ -17,7 +17,7 @@ const Proyects = () => {
             </div>
     { dataProjects.map((item, index) => ( 
     
-          <div key={index} className="relative mx-auto max-w-7xl pt-6 ">
+          <div key={index} className="relative mx-auto max-w-2xl pt-6 ">
               <div className= " grid max-w-lg gap-8 mx-auto mt-12 lg:grid-cols-2 lg:max-w-none bg-[url('/assets/bgTrailer.jpg')] bg-cover  bg-no-repeat bg-start" >
                   <div className="flex flex-col mb-12 overflow-hidden cursor-pointer">
                       <div className="flex flex-col justify-between flex-1">
@@ -30,7 +30,6 @@ const Proyects = () => {
                                         </h3>
                                             {item.links}
                                         </div>
-                                    <p className="text-lg font-normal text-white text-shadow w-full h-full">{item.description}</p>
                                   <div className="flex items-center mt-6">
                                     <div className="flex">
                                             {item.svg}
