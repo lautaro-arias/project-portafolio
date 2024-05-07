@@ -5,82 +5,42 @@ import LenguajesIcons from '../utils/arrayLenguajes'
 
 const Proyects = () => {
   const { dataProjects } = ArrayProjects()
-  const { svgs } = LenguajesIcons()
 
-
- 
   return (
     <>
-       <section>
-            <div className="flex mx-auto justify-center mb-26 ">
-                <h1 className= 'text-3xl text-cyan-600 border-b border-white px-8 py-3'>Proyectos</h1>
-            </div>
-    { dataProjects.map((item, index) => ( 
-    
-          <div key={index} className="relative mx-auto max-w-2xl pt-6 ">
-              <div className= " grid max-w-lg gap-8 mx-auto mt-12 lg:grid-cols-2 lg:max-w-none bg-[url('/assets/bgTrailer.jpg')] bg-cover  bg-no-repeat bg-start" >
-                  <div className="flex flex-col mb-12 overflow-hidden cursor-pointer">
-                      <div className="flex flex-col justify-between flex-1">
-                          <a href="/blog-post"></a>
-                          <div className="flex-1">
-                                <div  className="block mt-2 space-y-6">
-                                  <div className="flex items-center">
-                                    <h3 className=" flex text-2xl font-semibold leading-none tracking-tighter text-cyan-400">
-                                        {item.title} 
-                                        </h3>
-                                            {item.links}
-                                        </div>
-                                  <div className="flex items-center mt-6">
-                                    <div className="flex">
-                                            {item.svg}
-                                      </div>
-                                  </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                  <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-                      <div className="flex flex-col mb-12 overflow-hidden cursor-pointer">
-                          <a href="/blog-post">
-                                <div className="flex-shrink-0 relative w-full h-56 rounded-lg overflow-hidden">
-                                  <Image className="rounded-md mt-4 object-cover w-full h-full transition-transform duration-300 transform scale-100 hover:scale-110" src={item.img} width={960}height={720} alt="projects"/>
-                                </div>
-                            </a>
-                          <div className="flex flex-col justify-between flex-1">
-                              <a href="/blog-post"></a>
-                              {/*<div className="flex-1">
-                                    <a href="#" className="block mt-2 space-y-6">
-                                      <h3 className="text-2xl font-semibold leading-none tracking-tighter text-neutral-600">Typography on app.</h3>
-                                      <p className="text-lg font-normal text-gray-500">Filling text so you can see how it looks like with text. Did I said text?</p>
-                                    </a>
-                            </div>*/}
-                            </div>
-                        </div>
-                      <div className="flex flex-col mb-12 overflow-hidden cursor-pointer">
-                          <a href="/blog-post">
-                              <div className="flex-shrink-0 relative h-56 rounded-lg overflow-hidden">
-                                <Image className="rounded-md mt-4  object-cover w-full h-full transition-transform duration-300 transform scale-100 hover:scale-110" src={item.img2} width={525}height={0} alt=""/>
-                              </div>
-                          </a>
-                          <div className="flex flex-col justify-between flex-1">
-                                <a href="/blog-post"></a>
-                                {/*<div className="flex-1">
-                                    <a href="#" className="block mt-2 space-y-6">
-                                      <h3 className="text-2xl font-semibold leading-none tracking-tighter text-neutral-600">Typography on app.</h3>
-                                      <p className="text-lg font-normal text-gray-500">Filling text so you can see how it looks like with text. Did I said text?</p>
-                                    </a>
-                            </div>*/}
-                          </div>
-                      </div>
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap -m-4">
+            {dataProjects.map((item, index) => (
+              <div key={index} className="p-4 md:w-1/3">
+                <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                  <div className="flex-shrink-0 relative   overflow-hidden">
+                    <Image className=" object-cover w-full h-full transition-transform duration-300 transform scale-100 hover:scale-110" src={item.img} width={960} height={720} alt="" />
                   </div>
+                  <div className="p-6">
+                    <h1 className="title-font text-xl font-medium text-cyan-300 mb-3">{item.title}</h1>
+                    <div className="flex items-center flex-wrap cursor-pointer text-lg ">
+
+                      <a href={item.links} target='_blank' className={`inline-flex items-center ${item.hover} text-white md:mb-2 lg:mb-0`}>Ver
+                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M5 12h14"></path>
+                          <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                      <span className="text-gray-400  inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
+                        {item.svg}
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
+            ))}
           </div>
-    
-    ))}
-    </section>
-      
-    <Contacto/>
-</>
-)
+        </div>
+      </section>
+
+      <Contacto />
+    </>
+  )
 }
 export default Proyects;

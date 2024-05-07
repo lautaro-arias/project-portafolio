@@ -37,6 +37,7 @@ const config: Config = {
         'bgHero':"url('/src/modules/assets/hero.jpg')",
         'bgTrailer':"url('/src/modules/assets/bgTrailer.jpg')",
         'bgProyect1':"url('/src/modules/assets/proyect1.png')",
+        'bgYo':"url('/src/modules/assets/yo.png')",
       },
     },
   },

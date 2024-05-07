@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-//import { motion } from "framer-motion"
 import React from 'react';
-
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,14 +14,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <html lang="en" className="bg-black " >
       <body className={inter.className}>
-     {/*<motion.div
-      variants={{
-        hidden: { opacity: 0,y:75 }, 
-        visible: { opacity: 1 ,y:0},
-      }}
-      > */}
         {children}
-       {/* </motion.div>*/}
         </body>
     </html>
   );
