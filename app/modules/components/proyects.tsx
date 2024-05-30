@@ -1,7 +1,6 @@
-import Image from 'next/image'
-import Contacto from './contact'
-import ArrayProjects from '../utils/arrayProjects'
-import LenguajesIcons from '../utils/arrayLenguajes'
+import Image from 'next/image';
+import Contacto from './contact';
+import ArrayProjects from '../utils/arrayProjects';
 
 const Proyects = () => {
   const { dataProjects } = ArrayProjects()
@@ -9,7 +8,9 @@ const Proyects = () => {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 py-6 mx-auto">
+          <h1 className="text-start text-xl  sm:text-5xl-medium title-font pb-2 text-cyan-600  ">Proyectos</h1>
+          <div className='text-start mb-10  max-w-sm border border-white'></div>
           <div className="flex flex-wrap -m-4">
             {dataProjects.map((item, index) => (
               <div key={index} className="p-4 md:w-1/3">
@@ -38,7 +39,6 @@ const Proyects = () => {
           </div>
         </div>
       </section>
-
       <Contacto />
     </>
   )
