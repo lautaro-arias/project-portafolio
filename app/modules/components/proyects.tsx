@@ -1,13 +1,15 @@
 import Image from 'next/image';
 import Contacto from './contact';
 import ArrayProjects from '../utils/arrayProjects';
+import 'animate.css';
+
 
 const Proyects = () => {
   const { dataProjects } = ArrayProjects()
 
   return (
     <>
-      <section className="text-gray-600 body-font">
+      <section className="text-gray-600 body-font animate__animated animate__fadeIn animate__delay-900ms animate__slower">
         <div className="container px-5 py-6 mx-auto">
           <h1 className="text-start text-xl  sm:text-5xl-medium title-font pb-2 text-cyan-600  ">Proyectos</h1>
           <div className='text-start mb-10  max-w-sm border border-white'></div>
@@ -16,12 +18,13 @@ const Proyects = () => {
               <div key={index} className="p-4 md:w-1/3">
                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <div className="flex-shrink-0 relative   overflow-hidden">
-                    <Image className=" object-cover w-full h-full transition-transform duration-300 transform scale-100 hover:scale-110" src={item.img} width={960} height={720} alt="" />
+                    <a href={item.links} target='_blank' className={`inline-flex items-center ${item.hover} text-white md:mb-2 lg:mb-0`}>
+                      <Image className=" cursor-pointer object-cover w-full h-full transition-transform duration-300 transform scale-100 hover:scale-110" src={item.img} width={960} height={720} alt="" />
+                    </a>
                   </div>
                   <div className="p-6">
                     <h1 className="title-font text-xl font-medium text-cyan-300 mb-3">{item.title}</h1>
                     <div className="flex items-center flex-wrap cursor-pointer text-lg ">
-
                       <a href={item.links} target='_blank' className={`inline-flex items-center ${item.hover} text-white md:mb-2 lg:mb-0`}>Ver
                         <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                           <path d="M5 12h14"></path>
