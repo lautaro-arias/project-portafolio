@@ -24,4 +24,4 @@ const Lenguajes = () => {
     </>
   )
 }
-export default Lenguajes ;
+export default Lenguajes;

@@ -33,16 +33,8 @@ const DescargaCv = () => {
                   </Link>
                 </div>
               </div>
-              {/*si es menor a 2xl se va ver el texto y no la imagen y viceversa */}
-              <div className="hidden sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-cyan-500 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <p className="leading-relaxed text-lg text-white mb-4">
-                  Inicié en el mundo de la programación hace unos años, abarcando desde las bases de la informática hasta el desarrollo de software, creando interfaces intuitivas y eficientes. Mi aprendizaje ha sido autodidacta, basado en la búsqueda de información, respuestas a mis preguntas y proyectos personales, donde he mejorado mis habilidades mediante la práctica y el error. A pesar de no haber pasado por instituciones educativas formales, he dedicado tiempo y esfuerzo a construir proyectos desde cero, enfrentándome a desafíos y refinando constantemente mis habilidades.
-                </p>
-              </div>
               <div className=" w-full  lg:w-full   mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <Sobremi/>
-                
-               {/* <Image alt="gallery" width={1220} height={560} className=" object-cover object-center sm:w-full" src="/assets/h.png" />*/}
+                <Sobremi />
               </div>
             </div>
           </div>

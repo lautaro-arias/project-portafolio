@@ -1,6 +1,4 @@
-import React from 'react'
-
-
+import React from 'react';
 const Sobremi = () => {
     return (
         <div className="relative  bg-gray-950 p-2 border rounded-xl hover:shadow-md hover:shadow-cyan-600 border-gray-800">
@@ -39,7 +37,6 @@ const Sobremi = () => {
                 </p>
             </div>
         </div>
-
     )
 }
 export default Sobremi;

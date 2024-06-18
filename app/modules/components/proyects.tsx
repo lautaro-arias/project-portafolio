@@ -11,7 +11,7 @@ const Proyects = () => {
     <>
       <section className="text-gray-600 body-font animate__animated animate__fadeIn animate__delay-900ms animate__slower">
         <div className="container px-5 py-6 mx-auto">
-          <h1 className="text-start text-xl  sm:text-5xl-medium title-font pb-2 text-cyan-600  ">Proyectos</h1>
+          <h1 className="text-start text-xl  sm:text-5xl-medium title-font pb-2 text-cyan-600  ">Algunos de mis  proyectos</h1>
           <div className='text-start mb-10  max-w-sm border border-white'></div>
           <div className="flex flex-wrap -m-4">
             {dataProjects.map((item, index) => (
