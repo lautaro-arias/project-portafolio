@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 import Lenguajes from './lenguajes';
 import 'animate.css';
+import Sobremi from './sobremi';
 
 const DescargaCv = () => {
   return (
@@ -12,8 +13,8 @@ const DescargaCv = () => {
           <div className="lg:w-4/6 mx-auto text-center">
             <div className="flex flex-col text-center mx-auto sm:flex-row mb-10">
               <div className=" sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                <div className="w-40 h-40 xs:w-20 xs:h-20  rounded-full inline-flex  items-center justify-center ">
-                  <Image alt="team" width={460} height={460} className="bg-gray-800 ring mt-10 ring-cyan-600 ring-offset-black ring-offset-4 rounded-full object-cover object-center sm:mb-0 mb-4" src="/assets/lautaro.jpg" />
+                <div className="w-40 h-40 2xl:w-80 2xl:h-80  rounded-full inline-flex  items-center justify-center ">
+                  <Image alt="team" width={957} height={1280} className="w-full h-full  rounded-full bg-gray-800 ring mt-10 ring-cyan-600 ring-offset-black ring-offset-4 object-cover object-center sm:mb-0 mb-4" src="/assets/lautaro2.jpeg" />
                 </div>
                 <div className="flex flex-col items-center text-center justify-center">
                   <h1 className="title-font flex mx-auto justify-center font-extrabold mt-4 text-sm mb-4 text-white">
@@ -25,7 +26,7 @@ const DescargaCv = () => {
                   <h1 className=" bg-gradient-to-r from-red-500  via-yellow-400 to-green-500 bg-clip-text text-xl font-extrabold text-transparent ">Desarrollador Front-End</h1>
                   <div className="w-12 h-1 bg-cyan-500 rounded mt-2 mb-4"></div>
                   <Link href="https://drive.google.com/file/d/1e6j5-BFcn2b2WDE2iKi3YhQIx1SmDrhS/view?usp=drivesdk" target="_blank" className="border-black  hover:bg-transparent hover:border hover:border-cyan-300 hover:text-cyan-400  flex justify-center   mt-2 text-white h-12 w-60 bg-cyan-600 border-0 py-2  focus:outline-none hover:bg-cyan-500 rounded-xl text-lg">
-                    Descargar CV
+                    Mi CV
                     <svg xmlns="http://www.w3.org/2000/svg" className=" ms-2 h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                     </svg>
@@ -33,13 +34,15 @@ const DescargaCv = () => {
                 </div>
               </div>
               {/*si es menor a 2xl se va ver el texto y no la imagen y viceversa */}
-              <div className="2xl:hidden sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-cyan-500 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+              <div className="hidden sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-cyan-500 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                 <p className="leading-relaxed text-lg text-white mb-4">
                   Inicié en el mundo de la programación hace unos años, abarcando desde las bases de la informática hasta el desarrollo de software, creando interfaces intuitivas y eficientes. Mi aprendizaje ha sido autodidacta, basado en la búsqueda de información, respuestas a mis preguntas y proyectos personales, donde he mejorado mis habilidades mediante la práctica y el error. A pesar de no haber pasado por instituciones educativas formales, he dedicado tiempo y esfuerzo a construir proyectos desde cero, enfrentándome a desafíos y refinando constantemente mis habilidades.
                 </p>
               </div>
-              <div className="2xl:inline hidden w-full   mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <Image alt="gallery" width={1220} height={560} className=" object-cover object-center sm:w-full" src="/assets/h.png" />
+              <div className=" w-full  lg:w-full   mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <Sobremi/>
+                
+               {/* <Image alt="gallery" width={1220} height={560} className=" object-cover object-center sm:w-full" src="/assets/h.png" />*/}
               </div>
             </div>
           </div>
