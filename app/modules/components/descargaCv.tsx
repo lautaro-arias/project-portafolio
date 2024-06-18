@@ -25,7 +25,7 @@ const DescargaCv = () => {
                   <h1 className="bg-gradient-to-r from-green-300 via-cyan-500 to-purple-500 bg-clip-text text-2xl font-extrabold text-transparent xs:text-5xl sm:text-4xl">Lautaro Arias</h1>
                   <h1 className=" bg-gradient-to-r from-red-500  via-yellow-400 to-green-500 bg-clip-text text-xl font-extrabold text-transparent ">Desarrollador Front-End</h1>
                   <div className="w-12 h-1 bg-cyan-500 rounded mt-2 mb-4"></div>
-                  <Link href="https://drive.google.com/file/d/1e6j5-BFcn2b2WDE2iKi3YhQIx1SmDrhS/view?usp=drivesdk" target="_blank" className="border-black  hover:bg-transparent hover:border hover:border-cyan-300 hover:text-cyan-400  flex justify-center   mt-2 text-white h-12 w-60 bg-cyan-600 border-0 py-2  focus:outline-none hover:bg-cyan-500 rounded-xl text-lg">
+                  <Link href="https://drive.google.com/file/d/1AYAA760MLcqgRnhJHNI8VheOAo_mG1Hb/view?usp=sharing" target="_blank" className="border-black  hover:bg-transparent hover:border hover:border-cyan-300 hover:text-cyan-400  flex justify-center   mt-2 text-white h-12 w-60 bg-cyan-600 border-0 py-2  focus:outline-none hover:bg-cyan-500 rounded-xl text-lg">
                     Mi CV
                     <svg xmlns="http://www.w3.org/2000/svg" className=" ms-2 h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
