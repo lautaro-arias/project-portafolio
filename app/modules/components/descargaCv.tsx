@@ -8,7 +8,7 @@ import Sobremi from './sobremi';
 const DescargaCv = () => {
   return (
     <>
-      <section className="text-gray-600 body-font py-20  animate__animated animate__fadeIn animate__delay-900ms animate__slower ">
+      <section className="text-gray-600 body-font  py-20  animate__animated animate__fadeIn animate__delay-900ms animate__slower ">
         <div className="mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto text-center">
             <div className="flex flex-col text-center mx-auto sm:flex-row mb-10">
@@ -33,7 +33,7 @@ const DescargaCv = () => {
                   </Link>
                 </div>
               </div>
-              <div className=" w-full  lg:w-full   mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+              <div className=" w-96 md:w-full lg:w-full   mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                 <Sobremi />
               </div>
             </div>
