@@ -33,7 +33,7 @@ const DescargaCv = () => {
                   </Link>
                 </div>
               </div>
-              <div className=" w-96 md:w-full lg:w-full   mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+              <div className=" w-96 me-1 md:w-full lg:w-full   mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                 <Sobremi />
               </div>
             </div>
