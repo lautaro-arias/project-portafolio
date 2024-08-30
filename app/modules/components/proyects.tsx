@@ -15,7 +15,7 @@ const Proyects = () => {
           <div className='text-start mb-10  max-w-sm border border-white'></div>
           <div className="flex flex-wrap -m-4">
             {dataProjects.map((item, index) => (
-              <div key={index} className="p-4 md:w-1/3">
+              <div key={index} className="scrollCard p-4 md:w-1/3">
                 <div className="h-full border-2 border-gray-600 hover:border-gray-300 border-opacity-60 rounded-lg overflow-hidden">
                   <div className="flex-shrink-0 relative   overflow-hidden">
                     <a href={item.links} target='_blank' className={`inline-flex items-center ${item.hover} text-white md:mb-2 lg:mb-0`}>
