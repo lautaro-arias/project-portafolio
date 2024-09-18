@@ -18,7 +18,10 @@ const Sobremi = () => {
             </div>
             <div className="mt-5 space-y-1.5 px-5 pb-10">
                 <p className="mt-4 text-lg font-normal tracking-wide text-gray-400">
-                    <span className="text-lime-500">export</span> <span className="text-white font-bold">const</span> <span className="text-sky-500">sobreMi</span> <span className="text-lime-500">=</span> ( ) <span className="text-gray-200">=&gt;</span> {'{'}
+                <span className="text-lime-500">export</span> <span className="text-lime-500">default</span> <span className="text-white font-bold">function</span> <span className="text-sky-500">sobreMi</span> <span className="text-white">{'( )'}</span>    <span className="text-white">{'{'}</span>  
+                </p>
+                <p className="ml-3 me-80 md:me-0 text-lg font-normal tracking-wide text-sky-500">
+                <span className="text-lime-500 me-1">return</span><span className="text-white">{'('}</span>  
                 </p>
                 <p className="ml-3 me-80 md:me-0 text-lg font-normal tracking-wide text-sky-500">
                     <span className="text-slate-500">&lt;</span><span className="">section</span><span className="text-slate-500">&gt;</span><span className="relative inline-block px-1 before:absolute before:-inset-0.5 before:block before:rounded before:bg-blue-500/10"></span>
@@ -35,6 +38,8 @@ const Sobremi = () => {
                 <p className="ml-3 me-80 md:me-0 text-lg font-normal tracking-wide text-sky-500">
                     <span className="text-slate-500">&lt;/</span><span className="">section</span><span className="text-slate-500">&gt;</span>
                 </p>
+                <span className="text-white me-80 md:me-0" >{')'}</span><br/>
+                <span className="text-white me-80 md:me-0">{'}'}</span>  
             </div>
         </div>
     )

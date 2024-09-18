@@ -9,13 +9,13 @@ const Proyects = () => {
 
   return (
     <>
-      <section className="text-gray-600 body-font animate__animated animate__fadeIn animate__delay-900ms animate__slower">
-        <div className="container px-5 py-6 mx-auto">
+      <section className=" scrollCard text-gray-600 body-font animate__animated animate__fadeIn animate__delay-900ms animate__slower">
+        <div className="container px-5 pt-10 py-6 mx-auto">
           <h1 className="text-start text-xl  sm:text-5xl-medium title-font pb-2 text-cyan-600  ">Algunos de mis  proyectos</h1>
           <div className='text-start mb-10  max-w-sm border border-white'></div>
           <div className="flex flex-wrap -m-4">
             {dataProjects.map((item, index) => (
-              <div key={index} className="scrollCard p-4 md:w-1/3">
+              <div key={index} className=" p-4 md:w-1/3">
                 <div className="h-full border-2 border-gray-600 hover:border-gray-300 border-opacity-60 rounded-lg overflow-hidden">
                   <div className="flex-shrink-0 relative   overflow-hidden">
                     <a href={item.links} target='_blank' className={`inline-flex items-center ${item.hover} text-white md:mb-2 lg:mb-0`}>

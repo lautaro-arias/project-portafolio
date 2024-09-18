@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Lenguajes from './lenguajes';
 import 'animate.css';
 import Sobremi from './sobremi';
+import Jobs from './jobs';
 
 const DescargaCv = () => {
   return (
@@ -40,6 +41,7 @@ const DescargaCv = () => {
           </div>
         </div>
       </section>
+      <Jobs />
       <Lenguajes />
     </>
   )
