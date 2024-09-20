@@ -9,7 +9,7 @@ export default function jobsDescription() {
     const ArrayJobs = [
         {   
 
-            name: "Hospital Enfermeros Argentinos",
+            name: "Hospital E/A",
             tipo:"Aplicacion movil ",
             puesto: "Freelancer",
             start: "2022",
