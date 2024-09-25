@@ -5,15 +5,6 @@ const ArrayProjects = () => {
   const { project1,project2,project3} = LenguajesIcons()
 
     const dataProjects = [
-       /* {/*
-            bg:"bg-[url('/assets/bgTrailer.jpg')] bg-cover  bg-no-repeat bg-start",
-            img:"/assets/develap.png",
-            svg:project1,
-            inpiret:'',
-            links:"https://celebrated-yeot-bb3613.netlify.app",
-            title: 'Develap',
-            hover:'hover:text-teal-300',
-    }*/
         {
           bg:"bg-[url('/assets/bgTrailer.jpg')] bg-cover  bg-no-repeat bg-start",
           img:"/assets/netfli1-2.png",
@@ -38,10 +29,9 @@ const ArrayProjects = () => {
         bg:"bg-[url('/assets/bgTrailer.jpg')] bg-cover  bg-no-repeat bg-start",
         img:"/assets/calculadora.png",
         inpiret:'',
-
         svg:project3,
-        links:"https://spectacular-banoffee-24f976.netlify.app",
-        title: 'Calculadora',
+        links:"application-39609135-ed42-4ec7-9218-d5fc72de6fb5.apk",
+        title: 'Calculadora App',
         hover:'hover:text-gray-400',
       },
       {
@@ -49,8 +39,8 @@ const ArrayProjects = () => {
         img:"/assets/pomodoro.png",
         inpiret:'',
         svg:project3,
-        links:"https://effulgent-melomakarona-eee93d.netlify.app",
-        title:'Pomodoro',
+        links:"application-699e4a11-be6a-421e-b51b-35c5744ad744.apk",
+        title:'Pomodoro App',
         hover:'hover:text-blue-300',
       },
         
