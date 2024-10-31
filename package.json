@@ -13,8 +13,9 @@
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.15",
     "@react-pdf/renderer": "^3.4.3",
+    "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
-    "@tsparticles/slim": "^3.3.0",
+    "@tsparticles/slim": "^3.5.0",
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.19",
     "dotenv": "^16.4.5",
@@ -22,7 +23,6 @@
     "framer-motion": "^11.0.25",
     "next": "14.1.4",
     "nodemailer": "^6.9.13",
-    "particles.js": "^2.0.0",
     "react": "^18",
     "react-dom": "^18"
   },

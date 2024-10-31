@@ -8,7 +8,6 @@ import 'animate.css';
 const ParticlesComponent = (props) => {
 
   useEffect(() => {
-  
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
     })
