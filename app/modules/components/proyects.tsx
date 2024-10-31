@@ -1,25 +1,22 @@
-import Image from 'next/image';
-import Contacto from './contact';
 import ArrayProjects from '../utils/arrayProjects';
 import 'animate.css';
-
 
 const Proyects = () => {
   const { dataProjects } = ArrayProjects()
 
   return (
     <>
-      <section className=" scrollCard text-gray-600 body-font animate__animated animate__fadeIn animate__delay-900ms animate__slower">
+      <section className=" text-gray-600 body-font animate__animated animate__fadeIn animate__delay-900ms animate__slower">
         <div className="container px-5 pt-10 py-6 mx-auto">
           <h1 className="text-start text-xl  sm:text-5xl-medium title-font pb-2 text-cyan-600  ">Algunos de mis  proyectos</h1>
           <div className='text-start mb-10  max-w-sm border border-white'></div>
           <div className="flex flex-wrap -m-4">
-            {dataProjects.map((item, index) => (
-              <div key={index} className=" p-4 md:w-1/3">
+            {dataProjects.map((item) => (
+              <div key={item.title} className="scrollCard p-4 md:w-1/3">
                 <div className="h-full border-2 border-gray-600 hover:border-gray-300 border-opacity-60 rounded-lg overflow-hidden">
                   <div className="flex-shrink-0 relative   overflow-hidden">
                     <a href={item.links} target='_blank' className={`inline-flex items-center ${item.hover} text-white md:mb-2 lg:mb-0`} download>
-                      <Image className=" cursor-pointer object-cover w-full h-full transition-transform duration-300 transform scale-100 hover:scale-110" src={item.img} width={960} height={720} alt="" />
+                      <img className=" cursor-pointer object-cover w-full h-full transition-transform duration-300 transform scale-100 hover:scale-110" src={item.img} width={960} height={720} alt="" />
                     </a>
                   </div>
                   <div className="p-6">
@@ -45,7 +42,6 @@ const Proyects = () => {
           </div>
         </div>
       </section>
-      <Contacto />
     </>
   )
 }

@@ -5,13 +5,13 @@ export default function Jobs() {
     const { ArrayJobs } = jobsDescription()
     return (
         <>
-            <section className="scrollCard body-font animate__animated animate__fadeIn animate__delay-900ms animate__slower ">
+            <section className=" body-font animate__animated animate__fadeIn animate__delay-900ms animate__slower ">
                 <div className="container px-5  pt-1 lg:pb-20 mx-auto text-start ">
                     <h1 className="text-start text-xl  sm:text-5xl-medium title-font pb-2 text-cyan-600 ">Trabajos</h1>
                     <div className='text-start mb-8  max-w-sm border border-white'></div>
                     <div className="flex flex-wrap h-full -m-4">
                         {ArrayJobs.map((item, jobs) => (
-                            <div key={jobs} className=" w-full h-full lg:hover:scale-105 transition-all duration-300 lg:w-1/3">
+                            <div key={jobs} className="scrollCard w-full h-full lg:hover:scale-105 transition-all duration-300 lg:w-1/3">
                                 <div className=" h-full w-full px-6 md:px-14 pb-10 relative py-4 rounded-lg overflow-hidden text-center ">
                                     <details className=" border rounded-lg   group [&_summary::-webkit-details-marker]:hidden transition duration-300" open>
                                         <summary
@@ -55,9 +55,6 @@ export default function Jobs() {
                             </div>
                         ))}
                     </div>
-
-
-
                 </div>
             </section>
         </>

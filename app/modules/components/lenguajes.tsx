@@ -1,6 +1,5 @@
 import React from 'react';
 import LenguajesIcons from '../utils/arrayLenguajes';
-import Proyects from './proyects';
 import 'animate.css';
 
 const Lenguajes = () => {
@@ -20,7 +19,6 @@ const Lenguajes = () => {
           </div>
         </div>
       </section>
-      <Proyects />
     </>
   )
 }
