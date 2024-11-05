@@ -8,8 +8,15 @@ const DescargaCv = () => {
       <section className=" py-12  animate__animated animate__fadeIn animate__delay-900ms animate__slower  text-white">
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="bg-gradient-to-r from-green-300 via-cyan-500 to-purple-500 bg-clip-text text-3xl font-extrabold text-transparent xs:text-5xl sm:text-4xl">Lautaro Arias</h1>
-            <h1 className=" bg-gradient-to-r from-red-500  via-yellow-400 to-green-500 bg-clip-text text-xl font-extrabold text-transparent ">Desarrollador Front-End</h1>
+            <h1 className="bg-gradient-to-r from-cyan-200 via-cyan-400 to-sky-300 bg-clip-text text-3xl font-extrabold text-transparent xs:text-5xl sm:text-7xl" style={{ textShadow: '2px 3px 6px rgba(255, 255, 255, 0.5)' }}>
+              Lautaro Arias
+            </h1>
+            <h1
+              className="bg-gradient-to-r from-red-500 via-yellow-400 to-green-500 bg-clip-text text-xl lg:text-3xl font-extrabold text-transparent"
+            >
+              Desarrollador Front-End
+            </h1>
+
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link href="https://drive.google.com/file/d/1AYAA760MLcqgRnhJHNI8VheOAo_mG1Hb/view?usp=sharing" target="_blank" className="border-black  hover:bg-transparent hover:border hover:border-cyan-300 hover:text-cyan-400  flex justify-center   mt-2 text-white h-12 w-60 bg-cyan-600 border-0 py-2  focus:outline-none hover:bg-cyan-500 rounded-xl text-lg">
                 Mi CV
