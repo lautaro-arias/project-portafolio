@@ -1,7 +1,7 @@
 import LenguajesIcons from "./arrayLenguajes";
 
 const ArrayProjects = () => {
-  const { project1, project2, project3 } = LenguajesIcons();
+  const { project1, project2, project3,project4 } = LenguajesIcons();
 
   const dataProjects = [
     {
@@ -12,6 +12,15 @@ const ArrayProjects = () => {
       links: "https://web-1-muestra.netlify.app/",
       title: "Web de pedidos online",
       hover: "hover:text-orange-400",
+    },
+    {
+      bg: "bg-[url('/assets/bgTrailer.jpg')] bg-cover  bg-no-repeat bg-start",
+      img: "https://i.postimg.cc/vmNn2D6s/195shots-so.png",
+      svg: project4,
+      inpiret: "",
+      links: "https://webdemuestra2.netlify.app",
+      title: "Web de ecommerce",
+      hover: "hover:text-sky-900",
     },
     {
       bg: "bg-[url('/assets/bgTrailer.jpg')] bg-cover  bg-no-repeat bg-start",
