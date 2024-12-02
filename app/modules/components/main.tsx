@@ -6,6 +6,7 @@ import Lenguajes from './lenguajes'
 import Proyects from './proyects'
 import Contacto from './contact'
 import PartiOrigi from './partiOrigi'
+import Certificados from './certificados'
 export default function ComponentMain() {
   return (
     <div>
@@ -13,6 +14,7 @@ export default function ComponentMain() {
       <Sobremi />
       <Jobs />
       <Lenguajes />
+      <Certificados />
       <Proyects />
       <Contacto />
       <PartiOrigi tagId="particles"  />
