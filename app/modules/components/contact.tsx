@@ -12,12 +12,14 @@ const Contacto = () => {
       };
       //
       return (
-            <section id="contact" className="text-gray-400 body-font relative w-screen bg-transparent mt-10  ">
-                  <div className="container px-5  py-10 mx-auto ">
+            <section id="contacto" className="text-gray-400 body-font relative w-screen bg-transparent mt-10  ">
+                  <div className="container px-5  py-8 mx-auto ">
                         <div className="flex flex-col text-center w-full mb-12">
-                              <h1 className="text-start text-xl  sm:text-5xl-medium title-font pb-2 text-cyan-600  ">Contactame</h1>
+                              <h1 className="text-start bg-gradient-to-r backdrop-blur-2xl  text-xl  sm:text-xl-medium  pb-2 from-gray-100 via-gray-400 to-gray-600 bg-clip-text font-extrabold text-transparent " style={{ textShadow: '2px 3px 4px rgba(255, 255, 255, 0.5)' }}>
+                                    Contactame
+                              </h1>
                               <div className='text-start mb-5  max-w-sm border border-white'></div>
-                              <p className='lg:w-2/3 text-start leading-relaxed text-white text-lg'>Muchas gracias por llegar hasta aqui,
+                              <p className='lg:w-2/3 text-start leading-relaxed text-white text-lg backdrop-blur-2xl'>Muchas gracias por llegar hasta aqui,
                                     si necesitas una persona responsable y capaz de cumplir cada tarea no dudes en contactarme.
                               </p>
                               <div className="flex justify-start mt-6">

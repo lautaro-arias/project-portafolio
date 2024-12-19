@@ -15,6 +15,24 @@ export default function ArrayCertificados() {
       name: "Certificado de Front End Development Libraries",
       img: "https://i.postimg.cc/xjz4j3Hk/Captura-de-pantalla-2024-12-02-17-27-02.png",
     },
+    {
+      name: "Certificado de Front End Development Libraries",
+      img: "https://i.postimg.cc/xjz4j3Hk/Captura-de-pantalla-2024-12-02-17-27-02.png",
+    },
+    {
+      name: "Certificado de Front End Development Libraries",
+      img: "https://i.postimg.cc/xjz4j3Hk/Captura-de-pantalla-2024-12-02-17-27-02.png",
+    },
+    {
+      name: "Certificado de Front End Development Libraries",
+      img: "https://i.postimg.cc/xjz4j3Hk/Captura-de-pantalla-2024-12-02-17-27-02.png",
+    },{
+      name: "Certificado de Front End Development Libraries",
+      img: "https://i.postimg.cc/xjz4j3Hk/Captura-de-pantalla-2024-12-02-17-27-02.png",
+    },{
+      name: "Certificado de Front End Development Libraries",
+      img: "https://i.postimg.cc/xjz4j3Hk/Captura-de-pantalla-2024-12-02-17-27-02.png",
+    },
   ];
 
   return {

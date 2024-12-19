@@ -1,21 +1,24 @@
+'use client'
 import React from 'react'
-import jobsDescription from '../utils/arrayJobs'
+import JobsDescription from './arrayJobs'
 
 export default function Jobs() {
-    const { ArrayJobs } = jobsDescription()
+    const { ArrayJobs } = JobsDescription()
     return (
         <>
-            <section className=" body-font animate__animated animate__fadeIn animate__delay-900ms animate__slower ">
+            <section id='trabajos' className="  mt-20 lg:mt-12 body-font animate__animated animate__fadeIn animate__delay-900ms animate__slower ">
                 <div className="container px-5  pt-1 lg:pb-20 mx-auto text-start ">
-                    <h1 className="text-start text-xl  sm:text-5xl-medium title-font pb-2 text-cyan-600 ">Trabajos</h1>
+                <h1 className="pt-16 bg-gradient-to-r backdrop-blur-2xl  text-xl  sm:text-xl-medium  pb-2 from-gray-100 via-gray-400 to-gray-600 bg-clip-text font-extrabold text-transparent " style={{ textShadow: '2px 3px 4px rgba(255, 255, 255, 0.5)' }}>
+                Trabajos
+                </h1>
                     <div className='text-start mb-8  max-w-sm border border-white'></div>
-                    <div className="flex flex-wrap h-full -m-4">
-                        {ArrayJobs.map((item, jobs) => (
-                            <div key={jobs} className="scrollCard w-full h-full lg:hover:scale-105 transition-all duration-300 lg:w-1/3">
-                                <div className=" h-full w-full px-6 md:px-14 pb-10 relative py-4 rounded-lg overflow-hidden text-center ">
+                    <div className="flex flex-wrap h-full ">
+                        {ArrayJobs.map((item) => (
+                            <div key={item.id} className="bg-gray-950 scrollCard w-full h-full max-h-[50vh] lg:hover:scale-105 transition-all duration-300 lg:w-2/3 group">
+                                <div className=" h-full w-full px-6 md:px-0 pb-10 relative py-4 rounded-lg overflow-hidden text-center ">
                                     <details className=" border rounded-lg   group [&_summary::-webkit-details-marker]:hidden transition duration-300" open>
                                         <summary
-                                            className="flex cursor-pointer border border-white items-center justify-between gap-1.5 rounded-b-sm rounded-t-md bg-cyan-600  p-4 text-white"
+                                            className="flex cursor-pointer border border-white items-center justify-between gap-1.5 rounded-b-sm rounded-t-md bg-gray-400 group-hover:bg-cyan-700  p-4 text-white"
                                         >
                                             <h1 className="text-lg">{item.name}</h1>
 
@@ -36,7 +39,7 @@ export default function Jobs() {
                                                 </h5>
                                             }
                                             <h5 className="font-semibold text-cyan-600">{item.puesto}</h5>
-                                            <p className="mt-4 px-4 mb-6 text-md font-semibold leading-relaxed text-white max-h-[15vh] overflow-y-auto">
+                                            <p className="mt-4 px-4 mb-6 text-md font-semibold leading-relaxed text-white max-h-[20vh] overflow-y-auto">
                                                 {item.description}
                                             </p>
                                             {item.svgLenguaje &&
@@ -45,7 +48,7 @@ export default function Jobs() {
                                                 </span>
                                             }
                                             {item.link && (
-                                                <a href={item.link} target='_blank' className=" text-white bg-cyan-600 border border-white rounded-2xl inline-flex ml-4 leading-none text-sm p-6 py-2">
+                                                <a href={item.link} target='_blank' className=" text-white bg-gray-400 group-hover:bg-cyan-600 border border-white rounded-2xl inline-flex ml-4 leading-none text-sm p-6 py-2">
                                                     ir
                                                 </a>
                                             )}

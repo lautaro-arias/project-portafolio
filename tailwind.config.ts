@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import flowbite from "flowbite-react/tailwind"
 
 const config: Config = {
   content: [
@@ -7,6 +8,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "node_modules/flowbite-react/lib/esm/**/*.js",
     "node_modules/flowbite-react/lib/esm/**/*.css", 
+    flowbite.content()
   ],
   theme: {
     fontWeight: {
@@ -29,6 +31,7 @@ const config: Config = {
       'display': ['Oswald',],
       'body': ['"Open Sans"',],
     },
+    
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -40,10 +43,12 @@ const config: Config = {
         'bgYo':"url('/src/modules/assets/yo.png')",
       },
     },
+    
   },
   plugins: [
     require("daisyui"),
     require('flowbite/plugin'),
+    flowbite.plugin()
   ],
 };
 export default config;
