@@ -12,7 +12,7 @@ export default function JobsDescription() {
 
       name: "Hospital E/A",
       tipo: "Aplicacion movil ",
-      puesto: "Freelancer",
+      puesto: "Freelance",
       start: "2022",
       img: "",
       id: 1,

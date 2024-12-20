@@ -11,7 +11,7 @@ import Nav from './nav/nav'
 import Certificados from './certificados'
 export default function ComponentMain() {
   return (
-    <div>
+    <div className='bg-gray-100'>
       <Nav/>
       <DescargaCv />
       <Proyects />

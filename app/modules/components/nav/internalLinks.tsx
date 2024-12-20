@@ -7,11 +7,11 @@ export default function InternalLinks() {
     const [selectedIndex, setSelectedIndex] = useState(0)
     return (
         <>
-            <ul className=" gap-8 md:gap-12 text-lg py-4 md:pb-2 items-center text-gray-400 mb-4 ">
+            <ul   className="  gap-8 md:gap-12 text-lg py-4 md:pb-2 items-center text-gray-400 mb-4 ">
                 <li className='hover:scale-105 transition-all duration-300  hover:text-gray-100'>
                     <div className="inline-flex">
                         <button
-                            className={`block transition bg-black px-1 py-1 rounded-md ml-1 m-1 ${selectedIndex === 0 ? ' text-white border-cyan-200 border-b-2' : ' border-b-2 border-transparent'} `}
+                            className={`block transition px-1 py-1  ml-1 m-1 ${selectedIndex === 0 ? ' text-white border-white border-b-2' : ' border-b-2 border-transparent'} `}
                             onClick={() => { setSelectedIndex(0); scrollToSection('yo') }}
                         >
                             Sobre mi
@@ -21,7 +21,7 @@ export default function InternalLinks() {
                 <li className='hover:scale-105 transition-all duration-300 hover:text-gray-100'>
                     <div className="inline-flex">
                         <button
-                            className={`block transition px-1 py-1 rounded-md ml-1 m-1  ${selectedIndex === 1 ? '  text-white border-cyan-200 border-b-2' : ' border-b-2 border-transparent'} `}
+                            className={`block transition px-1 py-1  ml-1 m-1  ${selectedIndex === 1 ? '  text-white border-white border-b-2' : ' border-b-2 border-transparent'} `}
                             onClick={() => { setSelectedIndex(1), scrollToSection('proyectos') }}
                         >
                             Proyectos
@@ -31,7 +31,7 @@ export default function InternalLinks() {
                 <li className='hover:scale-105 transition-all duration-300 hover:text-gray-100'>
                     <div className="inline-flex">
                         <button
-                            className={`block transition px-1 py-1 rounded-md ml-1 m-1 ${selectedIndex === 2 ? '  text-white border-cyan-200 border-b-2' : ' border-b-2 border-transparent'} `}
+                            className={`block transition px-1 py-1  ml-1 m-1 ${selectedIndex === 2 ? '  text-white border-white border-b-2' : ' border-b-2 border-transparent'} `}
                             onClick={() => { setSelectedIndex(2), scrollToSection('conocimientos') }}
                         >
                             Conocimientos
@@ -41,7 +41,7 @@ export default function InternalLinks() {
                 <li className='hover:scale-105 transition-all duration-300 hover:text-gray-100'>
                     <div className="inline-flex">
                         <button
-                            className={`block transition px-1 py-1 rounded-md ml-1 m-1  ${selectedIndex === 3 ? '  text-white border-cyan-200 border-b-2' : ' border-b-2 border-transparent'} `}
+                            className={`block transition px-1 py-1  ml-1 m-1  ${selectedIndex === 3 ? '  text-white border-white border-b-2' : ' border-b-2 border-transparent'} `}
                             onClick={() => { setSelectedIndex(3), scrollToSection('certificados') }}
                         >
                             Certificados
@@ -51,7 +51,7 @@ export default function InternalLinks() {
                 <li className='me-4 md:me-0 hover:scale-105 transition-all duration-300 hover:text-gray-100'>
                     <div className="inline-flex">
                         <button
-                            className={`block transition px-1 py-1 rounded-md ml-1 m-1  ${selectedIndex === 4 ? '  text-white border-cyan-200 border-b-2' : ' border-b-2 border-transparent'} `}
+                            className={`block transition px-1 py-1  ml-1 m-1  ${selectedIndex === 4 ? '  text-white border-white border-b-2' : ' border-b-2 border-transparent'} `}
                             onClick={() => { setSelectedIndex(4), scrollToSection('trabajos') }}
                         >
                             Trabajos
@@ -61,7 +61,7 @@ export default function InternalLinks() {
                 <li className='me-4 md:me-0 hover:scale-105 transition-all duration-300 hover:text-gray-100'>
                     <div className="inline-flex">
                         <button
-                            className={`block transition px-1 py-1 rounded-md ml-1 m-1  ${selectedIndex === 5 ? '  text-white border-cyan-200 border-b-2' : ' border-b-2 border-transparent'} `}
+                            className={`block transition px-1 py-1  ml-1 m-1  ${selectedIndex === 5 ? '  text-white border-white border-b-2' : ' border-b-2 border-transparent'} `}
                             onClick={() => { setSelectedIndex(5), scrollToSection('contacto') }}
                         >
                             Contacto

@@ -8,52 +8,36 @@ export default function Jobs() {
         <>
             <section id='trabajos' className="  mt-20 lg:mt-12 body-font animate__animated animate__fadeIn animate__delay-900ms animate__slower ">
                 <div className="container px-5  pt-1 lg:pb-20 mx-auto text-start ">
-                <h1 className="pt-16 bg-gradient-to-r backdrop-blur-2xl  text-xl  sm:text-xl-medium  pb-2 from-gray-100 via-gray-400 to-gray-600 bg-clip-text font-extrabold text-transparent " style={{ textShadow: '2px 3px 4px rgba(255, 255, 255, 0.5)' }}>
-                Trabajos
-                </h1>
-                    <div className='text-start mb-8  max-w-sm border border-white'></div>
+                    <h1 className="pt-16 bg-gradient-to-r backdrop-blur-2xl  text-xl  sm:text-xl-medium  pb-2 from-gray-500 via-gray-600 to-gray-700 bg-clip-text font-extrabold text-transparent " style={{ textShadow: '2px 3px 4px rgba(255, 255, 255, 0.5)' }}>
+                        Trabajos
+                    </h1>
+                    <div className='text-start mb-8  max-w-sm border border-gray-600'></div>
                     <div className="flex flex-wrap h-full ">
                         {ArrayJobs.map((item) => (
-                            <div key={item.id} className="bg-gray-950 scrollCard w-full h-full max-h-[50vh] lg:hover:scale-105 transition-all duration-300 lg:w-2/3 group">
-                                <div className=" h-full w-full px-6 md:px-0 pb-10 relative py-4 rounded-lg overflow-hidden text-center ">
-                                    <details className=" border rounded-lg   group [&_summary::-webkit-details-marker]:hidden transition duration-300" open>
-                                        <summary
-                                            className="flex cursor-pointer border border-white items-center justify-between gap-1.5 rounded-b-sm rounded-t-md bg-gray-400 group-hover:bg-cyan-700  p-4 text-white"
-                                        >
-                                            <h1 className="text-lg">{item.name}</h1>
-
-                                            <svg
-                                                className="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                            >
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                                            </svg>
-                                        </summary>
-                                        <div className='p-4 pt-4 container  animate__animated animate__fadeIn animate__delay-900ms animate__slower' >
-                                            {item.tipo &&
-                                                <h5 className="font-medium text-md mb-2 text-cyan-600 rounded-lg p-1  bg-white inline-block">
-                                                    {item.tipo}
-                                                </h5>
-                                            }
-                                            <h5 className="font-semibold text-cyan-600">{item.puesto}</h5>
-                                            <p className="mt-4 px-4 mb-6 text-md font-semibold leading-relaxed text-white max-h-[20vh] overflow-y-auto">
-                                                {item.description}
-                                            </p>
-                                            {item.svgLenguaje &&
-                                                <span className="text-gray-400 rounded-xl bg-gray-50 ml-4 inline-flex items-center   leading-none text-sm pr-3 py-1">
-                                                    {item.svgLenguaje}
-                                                </span>
-                                            }
-                                            {item.link && (
-                                                <a href={item.link} target='_blank' className=" text-white bg-gray-400 group-hover:bg-cyan-600 border border-white rounded-2xl inline-flex ml-4 leading-none text-sm p-6 py-2">
-                                                    ir
-                                                </a>
-                                            )}
-                                        </div>
-                                    </details>
+                            <div key={item.id} className="  mt-4 w-full h-full max-h-[50vh] lg:hover:scale-105 transition-all duration-300 lg:w-2/3 group">
+                                <div className="bg-gray-950 scrollCard h-full w-full px-6 md:px-0 pb-10 relative py-4 rounded-lg overflow-hidden text-center ">
+                                    <h1 className="text-lg text-white font-semibold">{item.name}</h1>
+                                    <div className='bg-gray-950 p-4 pt-4 container  animate__animated animate__fadeIn animate__delay-900ms animate__slower' >
+                                        {/*item.tipo &&
+                                            <h5 className="font-medium text-md mb-2 text-cyan-600 rounded-lg p-1  bg-white inline-block">
+                                                {item.tipo}
+                                            </h5>
+                                        */}
+                                        <h5 className="font-semibold text-cyan-600">{item.puesto}</h5>
+                                        <p className="mt-4 px-4 mb-6 text-md font-semibold leading-relaxed text-white max-h-[20vh] overflow-y-auto">
+                                            {item.description}
+                                        </p>
+                                        {/*item.svgLenguaje &&
+                                            <span className="text-gray-400 rounded-xl bg-gray-50 ml-4 inline-flex items-center   leading-none text-sm pr-3 py-1">
+                                                {item.svgLenguaje}
+                                            </span>
+                                        */}
+                                        {item.link && (
+                                            <a href={item.link} target='_blank' className=" text-white bg-gray-400 group-hover:bg-cyan-600 border border-white rounded-2xl inline-flex ml-4 leading-none text-sm p-6 py-2">
+                                                ir
+                                            </a>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         ))}
