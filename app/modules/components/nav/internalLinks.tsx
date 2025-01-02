@@ -74,7 +74,6 @@ export default function InternalLinks() {
                             className='block transition  text-white'
                         >
                             <span>CV</span>
-                           
                         </Link>
                         <svg
                                 className='mt-1 ml-1 hidden lg:flex'

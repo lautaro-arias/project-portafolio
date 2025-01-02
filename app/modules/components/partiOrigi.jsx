@@ -1,4 +1,4 @@
-'use client'
+/*'use client'
 import { useEffect } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useMemo } from "react";
@@ -69,4 +69,4 @@ const ParticlesComponent = (props) => {
   );
 };
 
-export default ParticlesComponent; 
+export default ParticlesComponent;  */

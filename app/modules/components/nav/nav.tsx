@@ -1,6 +1,5 @@
 import React from 'react'
 import InternalLinks from './internalLinks'
-import PartiOrigi from '../partiOrigi'
 
 export default function Nav() {
     return (

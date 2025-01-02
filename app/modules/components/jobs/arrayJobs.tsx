@@ -3,9 +3,7 @@ import React from 'react'
 import LenguajesIcons from '../../utils/arrayLenguajes'
 
 export default function JobsDescription() {
-
   const { jobsSvg } = LenguajesIcons()
-
 
   const ArrayJobs = [
     {

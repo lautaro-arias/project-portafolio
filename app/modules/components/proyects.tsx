@@ -30,12 +30,6 @@ const Proyects = () => {
                           <a className='bg-gray-900 rounded-lg px-3 py-1 hover:text-sky-600' href={item.inpiret} target='_blank'>Inspirado click</a>
                         </h1>
                         <div className="flex items-center flex-wrap cursor-pointer text-lg ">
-                          {/*<a href={item.links} target='_blank' className='inline-flex items-center  text-white group-hover:bg-white rounded-lg px-1 group-hover:text-gray-700 md:mb-2 lg:mb-0' download>Ver
-                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M5 12h14"></path>
-                          <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>*/}
                           <span className="text-gray-400  inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
                             {item.svg}
                           </span>
@@ -44,7 +38,6 @@ const Proyects = () => {
                     </div>
                   </Link>
                 </div>
-
               </>
             ))}
           </div>

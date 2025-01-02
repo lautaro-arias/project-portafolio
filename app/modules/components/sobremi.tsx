@@ -14,7 +14,7 @@ const Sobremi = () => {
                         <circle r="12" cy="12" cx="12"></circle>
                     </svg>
                 </div>
-                <span className="absolute inset-x-0 top-2 text-xs font-semibold text-white">FrontEnd.tsx</span>
+                <span className="absolute inset-x-0 top-2 text-xs font-semibold text-white">SobreMi.tsx</span>
             </div>
             <div className="mt-5 space-y-1.5 px-5 pb-10">
                 <p className="mt-4 text-lg font-normal tracking-wide text-gray-400">
