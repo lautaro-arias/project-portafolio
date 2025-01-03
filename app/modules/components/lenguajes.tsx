@@ -1,6 +1,6 @@
 import React from 'react';
 import LenguajesIcons from '../utils/arrayLenguajes';
-import 'animate.css';
+//import 'animate.css';
 
 const Lenguajes = () => {
   const { svgs } = LenguajesIcons()
@@ -14,7 +14,7 @@ const Lenguajes = () => {
           <div className='text-start mb-10  max-w-sm border border-gray-600'></div>
           <div className="  text-start mx-auto  w-full  grid grid-cols-2 xs:grid-cols-3 gap-8  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-10 ">
             {svgs.map((item, index) => (
-              <div key={index} className="sm:ml-12 xl:ml-0  hover:w-22 mx-auto  bg-gray-100  w-10 h-10  flex  items-center justify-center rounded-full ">
+              <div key={item.key || index} className="sm:ml-12 xl:ml-0  hover:w-22 mx-auto  bg-gray-100  w-10 h-10  flex  items-center justify-center rounded-full ">
                 {item}
               </div>
             ))}

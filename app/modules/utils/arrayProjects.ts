@@ -11,6 +11,7 @@ const ArrayProjects = () => {
       inpiret: "",
       links: "https://web-1-muestra.netlify.app/",
       title: "Web de pedidos online",
+      id:0o1,
       hover: "hover:text-orange-400",
     },
     {
@@ -20,6 +21,7 @@ const ArrayProjects = () => {
       inpiret: "",
       links: "https://webdemuestra2.netlify.app",
       title: "Web de ecommerce",
+      id:0o2,
       hover: "hover:text-sky-900",
     },
     {
@@ -29,6 +31,7 @@ const ArrayProjects = () => {
       svg: project2,
       links: "https://incredible-pastelito-683baa.netlify.app",
       title: "Movistar",
+      id:0o3,
       hover: "hover:text-sky-500",
     },
     {
@@ -38,6 +41,7 @@ const ArrayProjects = () => {
       svg: project1,
       links: "https://celebrated-yeot-bb3613.netlify.app",
       title: "Netflix clone",
+      id:0o4,
       hover: "hover:text-red-600",
     },
     {
@@ -47,6 +51,7 @@ const ArrayProjects = () => {
       svg: project3,
       links: "application-39609135-ed42-4ec7-9218-d5fc72de6fb5.apk",
       title: "Calculadora App",
+      id:0o5,
       hover: "hover:text-gray-400",
     },
     {
@@ -56,6 +61,7 @@ const ArrayProjects = () => {
       svg: project3,
       links: "application-699e4a11-be6a-421e-b51b-35c5744ad744.apk",
       title: "Pomodoro App",
+      id:0o6,
       hover: "hover:text-blue-300",
     },
   ];

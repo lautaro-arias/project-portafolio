@@ -3,7 +3,7 @@ import DescargaCv from './descargaCv'
 import Jobs from './jobs/jobs'
 import Lenguajes from './lenguajes'
 import Proyects from './proyects'
-import Contacto from './contact'
+import Contacto from '../contact/contact'
 import Nav from './nav/nav'
 import Certificados from './certificados'
 export default function ComponentMain() {
@@ -16,7 +16,6 @@ export default function ComponentMain() {
       <Certificados />
       <Jobs />
       <Contacto />
-      {/*<PartiOrigi tagId="particles"  />*/}
     </section>
   )
 }

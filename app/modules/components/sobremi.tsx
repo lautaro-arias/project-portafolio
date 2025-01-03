@@ -1,7 +1,10 @@
+'use client'
 import React from 'react';
+import 'animate.css';
+
 const Sobremi = () => {
     return (
-        <div  className="flex flex-col bg-gray-950 mx-auto w-full md:w-[90%] max-w-[1500px]  p-2 mb-16  rounded-xl hover:shadow-md border-2 border-gray-700">
+        <div  className="flex flex-col animate__animated animate__fadeIn animate__delay-1s animate__slower bg-gray-950 mx-auto w-full md:w-[90%] max-w-[1500px]  p-2 mb-16  rounded-xl hover:shadow-md border-2 border-gray-700">
             <div className="relative flex text-center">
                 <div className="flex pl-3.5 pt-3">
                     <svg viewBox="0 0 24 24" fill="currentColor" className="-ml-0.5 mr-1.5 h-3 w-3 text-red-600">

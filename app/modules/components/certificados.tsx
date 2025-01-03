@@ -1,5 +1,5 @@
 'use client'
-import 'animate.css';
+//import 'animate.css';
 import { Carousel } from "flowbite-react";
 
 export default function Certificados() {

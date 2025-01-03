@@ -6,6 +6,7 @@ dotenv.config();
 
 export default function UseFormPost() {
   const [isOk, setIsOk] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<DataForm>({
     name: "",
     phone: "",
@@ -23,14 +24,18 @@ export default function UseFormPost() {
     });
   };
 
-  const url = process.env.NEXT_PUBLIC_API_URL;
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    if (!url) {
-      console.error("URL no configurada");
-      return;
-    }
+  const handleClick = () => {
+    setLoading(true);
+  };
 
-    e.preventDefault();
+  const url = process.env.NEXT_PUBLIC_API_URL as string;
+  function existUrl (){
+    if (!url) {
+      throw new Error("URL no configurada");
+    }
+  }
+
+  async function PostEmail() {
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -39,18 +44,39 @@ export default function UseFormPost() {
         },
         body: JSON.stringify(formData),
       });
-
-      if (response.ok) {
-        setIsOk(true);
-
-        setTimeout(() => {
-          setIsOk(false);
-        }, 5000);
-      } else {
-        //console.error("Error al enviar datos");
+  
+      if (!response.ok) {
+        throw new Error(`Error al enviar email: ${response.statusText}`);
       }
+  
+      responseOk();
     } catch (error) {
-      //console.error("Error de red:", error);
+      console.error("Error en la solicitud:", error);
+      throw error;
+    }
+  }
+  function responseOk() {
+    setLoading(false);
+    setIsOk(true);
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      message: "",
+    });
+  
+    setTimeout(() => setIsOk(false), 6000)
+  }
+
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      existUrl();
+      await PostEmail();
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
     }
   };
 
@@ -59,5 +85,7 @@ export default function UseFormPost() {
     isOk,
     handleInputChange,
     handleSubmit,
+    handleClick,
+    loading
   };
 }
