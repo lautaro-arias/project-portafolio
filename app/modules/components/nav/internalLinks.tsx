@@ -70,7 +70,7 @@ export default function InternalLinks() {
                 </li>
                 <li className='ml-4 md:ml-0 hover:scale-105 transition-all duration-300 hover:text-gray-100 '>
                     <div className="inline-flex  bg-cyan-600 hover:bg-cyan-500 rounded-md px-1 py-1 cursor-pointer">
-                        <Link href="https://drive.google.com/file/d/1kzYqISUhrQ6BsJBQSS-I8sCLY6MGKGHR/view" target="_blank"
+                        <Link href="https://drive.google.com/file/d/1LJjH_MbZG-RPa3fjXU78wqKRt5EdFtyO/view?usp=drive_link" target="_blank"
                             className='block transition  text-white'
                         >
                             <span>CV</span>

@@ -47,7 +47,11 @@ export default function Certificados() {
                   className="w-full h-auto px-16 py-4 object-contain "
                   src="https://i.postimg.cc/qR3pV48L/typescript.jpg"
                   alt="Certificado 6"
-                />
+                /><img
+                className="w-full h-auto px-16 py-4 object-contain "
+                src="https://i.postimg.cc/Z5m04tRY/Lautaro-Arias-EXAMEN-Redes-Informaticas-Redes-Informaticas-academia-comunidadreparando-com.png"
+                alt="Certificado 7"
+              />
               </Carousel>
             </div>
           </div>
